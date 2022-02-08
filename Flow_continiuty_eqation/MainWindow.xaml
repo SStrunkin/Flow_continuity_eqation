@@ -1,0 +1,91 @@
+﻿<Window x:Class="Flow_continiuty_eqation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Flow_continiuty_eqation"
+        mc:Ignorable="d"
+        Title="Уравнение неприрывности потока" Height="768" Width="1366">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"
+               x:Name="LeftPipe" Content="Участок 1" FontWeight="Bold" 
+               FontSize="30" MaxHeight="50" VerticalAlignment="Top">
+            
+        </Label>
+
+        <Label Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center"
+               x:Name="RightPipe" Content="Участок 2" FontWeight="Bold" 
+               FontSize="30" MaxHeight="50" VerticalAlignment="Top">
+
+        </Label>
+
+        <Grid Grid.Row="4" Grid.Column="0" Margin="10,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+            <StackPanel Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Left">
+                <Label x:Name="volumeFlowLabelLeft" Content="Объёмный расход (м/сек^2)"></Label>
+                <TextBox x:Name="volumeFlowTextBoxLeft" MaxWidth="200"></TextBox>
+                <Label></Label>
+                <Label x:Name="flowSpeedLabelLeft" Content="Скорость потока (м/сек)"></Label>
+                <TextBox x:Name="flowSpeedTextBoxLeft" MaxWidth="200"></TextBox>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Grid.RowSpan="2" HorizontalAlignment="Left">
+                <Label x:Name="sqareLabelLeft" Content="Площадь сечения (м^2)"></Label>
+                <TextBox x:Name="sqareTextBoxLeft" MaxWidth="200"></TextBox>
+                <Label></Label>
+                <Label x:Name="diametrLabelLeft" Content="Диаметр (м)"></Label>
+                <TextBox x:Name="diametrTextBoxLeft" MaxWidth="200"></TextBox>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="4" Grid.Column="1" Margin="10,0,0,0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Left">
+                <Label x:Name="volumeFlowLabelRight" Content="Объёмный расход (м/сек^2)"></Label>
+                <TextBox x:Name="volumeFlowTextBoxRight" MaxWidth="200"></TextBox>
+                <Label></Label>
+                <Label x:Name="flowSpeedLabelRight" Content="Скорость потока (м/сек)"></Label>
+                <TextBox x:Name="flowSpeedTextBoxRight" MaxWidth="200"></TextBox>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Grid.RowSpan="2" HorizontalAlignment="Left">
+                <Label x:Name="sqareLabelRight" Content="Площадь сечения (м^2)"></Label>
+                <TextBox x:Name="sqareTextBoxRight" MaxWidth="200"></TextBox>
+                <Label></Label>
+                <Label x:Name="diametrLabelRight" Content="Диаметр (м)"></Label>
+                <TextBox x:Name="diametrTextBoxRight" MaxWidth="200"></TextBox>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>

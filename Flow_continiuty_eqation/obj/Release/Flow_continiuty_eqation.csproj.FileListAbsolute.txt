@@ -1,0 +1,15 @@
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\bin\Release\Flow_continiuty_eqation.exe.config
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\bin\Release\Flow_continiuty_eqation.exe
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\bin\Release\Flow_continiuty_eqation.pdb
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\obj\Release\Flow_continiuty_eqation.csprojAssemblyReference.cache
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\obj\Release\MainWindow.g.cs
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\obj\Release\App.g.cs
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\obj\Release\Flow_continiuty_eqation_MarkupCompile.cache
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\obj\Release\Flow_continiuty_eqation_MarkupCompile.lref
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\obj\Release\MainWindow.baml
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\obj\Release\Flow_continiuty_eqation.g.resources
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\obj\Release\Flow_continiuty_eqation.Properties.Resources.resources
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\obj\Release\Flow_continiuty_eqation.csproj.GenerateResource.cache
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\obj\Release\Flow_continiuty_eqation.csproj.CoreCompileInputs.cache
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\obj\Release\Flow_continiuty_eqation.exe
+C:\Users\stepan\Documents\Visual Studio 2017\Projects\Flow_continiuty_eqation\Flow_continiuty_eqation\obj\Release\Flow_continiuty_eqation.pdb

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -44,14 +45,46 @@ namespace Flow_continiuty_eqation
             bigPipe.EndInit();
             mainImageRight.Stretch = Stretch.Fill;
 
-
-            sqareTextBoxLeft.TextChanged += setMainPictures;            
+            sqareTextBoxLeft.TextChanged += setMainPictures;
             sqareTextBoxRight.TextChanged += setMainPictures;
-            sqareTextBoxLeft.Text = "0";
-            sqareTextBoxRight.Text = "0";
+
+
+            List<TextBox> textBoxesList = new List<TextBox>();
+
+            textBoxesList.Add(volumeFlowTextBoxLeft);
+            textBoxesList.Add(flowSpeedTextBoxLeft);
+            textBoxesList.Add(sqareTextBoxLeft);
+            textBoxesList.Add(diametrTextBoxLeft);
+            textBoxesList.Add(volumeFlowTextBoxRight);
+            textBoxesList.Add(flowSpeedTextBoxRight);
+            textBoxesList.Add(sqareTextBoxRight);
+            textBoxesList.Add(diametrTextBoxRight);
+            
+            foreach(var textBox in textBoxesList)
+            {              
+                textBox.TextChanged += TextBox_TextChanged;
+            }
+
+
+
+                                   
 
         }
 
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+
+            String textBoxContent = textBox.Text;
+
+            if (textBoxContent.Contains("."))
+            {               
+                textBoxContent = textBoxContent.Replace('.', ',');
+            }            
+
+            textBox.Text = textBoxContent;
+            textBox.CaretIndex = textBox.Text.Length;
+        }
 
         private void setMainPictures(object sender, TextChangedEventArgs e)
         {                        

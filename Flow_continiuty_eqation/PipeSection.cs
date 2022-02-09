@@ -8,10 +8,10 @@ namespace Flow_continiuty_eqation
 {
     class PipeSection : Calculate
     {
-        static double volumeFlow { get; set; }
-        double diameter { get; set; }
-        double flowSpeed { get; set; }
-        double sqare { get; set; }
+        public static double volumeFlow { get; set; }
+        public double diameter { get; set; }
+        public double flowSpeed { get; set; }
+        public double sqare { get; set; }
 
 
         public void Calculate()

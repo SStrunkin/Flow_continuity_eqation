@@ -45,8 +45,7 @@ namespace Flow_continiuty_eqation
             bigPipe.EndInit();
             mainImageRight.Stretch = Stretch.Fill;
 
-            sqareTextBoxLeft.TextChanged += setMainPictures;
-            sqareTextBoxRight.TextChanged += setMainPictures;
+            
 
 
             List<TextBox> textBoxesList = new List<TextBox>();
@@ -63,11 +62,7 @@ namespace Flow_continiuty_eqation
             foreach(var textBox in textBoxesList)
             {              
                 textBox.TextChanged += TextBox_TextChanged;
-            }
-
-
-
-                                   
+            }            
 
         }
 
@@ -77,49 +72,105 @@ namespace Flow_continiuty_eqation
 
             String textBoxContent = textBox.Text;
 
-            if (textBoxContent.Contains("."))
-            {               
-                textBoxContent = textBoxContent.Replace('.', ',');
-            }            
+            textBoxContent = replacePointToComma(textBoxContent);
 
             textBox.Text = textBoxContent;
             textBox.CaretIndex = textBox.Text.Length;
+
+
+            Double value = getTextBoxValue(textBox);
+
+
+            if(textBox.Name.Equals(volumeFlowTextBoxLeft.Name))
+            {
+                PipeSection.volumeFlow = value;
+            }
+            else if(textBox.Name.Equals(flowSpeedTextBoxLeft.Name))
+            {
+                pipeSectionLeft.flowSpeed = value;
+            }
+            else if(textBox.Name.Equals(sqareTextBoxLeft.Name))
+            {
+                pipeSectionLeft.sqare = value;
+            }
+            else if(textBox.Name.Equals(diametrTextBoxLeft.Name))
+            {
+                pipeSectionLeft.diameter = value;
+            }
+            else if(textBox.Name.Equals(volumeFlowTextBoxRight.Name))
+            {
+                PipeSection.volumeFlow = value;
+            }
+            else if(textBox.Name.Equals(flowSpeedTextBoxRight.Name))
+            {
+                pipeSectionRight.flowSpeed = value;
+            }
+            else if(textBox.Name.Equals(sqareTextBoxRight.Name))
+            {
+                pipeSectionRight.sqare = value;
+            }
+            else if(textBox.Name.Equals(diametrTextBoxRight.Name))
+            {
+                pipeSectionRight.diameter = value;
+            }
+
+
+            setMainPictures();
+
         }
 
-        private void setMainPictures(object sender, TextChangedEventArgs e)
-        {                        
-            if ((sqareTextBoxLeft.Text != "") && (sqareTextBoxRight.Text != ""))
+        private Double getTextBoxValue(TextBox textBox)
+        {
+            Double doubleValue = 0;
+
+            try
             {
-                String leftSqareValueString = "", rightSqareValueString = "";
-                Double leftSqareValueDouble = 0, rightSqareValueDouble = 0;
 
-                leftSqareValueString = sqareTextBoxLeft.Text;
-                rightSqareValueString = sqareTextBoxRight.Text;
+                doubleValue = Double.Parse(textBox.Text);
+                textBox.Background = Brushes.White;
 
-                try
+            }
+            catch (Exception)
+            {
+
+                textBox.Background = Brushes.PaleVioletRed;
+
+                if (textBox.Text == "")
                 {
-                    leftSqareValueDouble = Double.Parse(leftSqareValueString);
-                    rightSqareValueDouble = Double.Parse(rightSqareValueString);
+                    textBox.Background = Brushes.White;
                 }
-                catch (Exception)
-                {}
+            }
 
-                if(leftSqareValueDouble == rightSqareValueDouble)
+            return doubleValue;
+        }
+
+        private String replacePointToComma(String textBoxContent)
+        {            
+            if (textBoxContent.Contains("."))
+            {
+                textBoxContent = textBoxContent.Replace('.', ',');
+            }
+
+            return textBoxContent;
+        }
+
+        private void setMainPictures()
+        {                                   
+                if(pipeSectionLeft.sqare == pipeSectionRight.sqare)
                 {
                     mainImageLeft.Source = littlePipe;
                     mainImageRight.Source = littlePipe;                   
                 }
-                else if(leftSqareValueDouble > rightSqareValueDouble)
+                else if(pipeSectionLeft.sqare > pipeSectionRight.sqare)
                 {
                     mainImageLeft.Source = bigPipe;
                     mainImageRight.Source = littlePipe;                    
                 }
-                else if(leftSqareValueDouble < rightSqareValueDouble)
+                else if(pipeSectionLeft.sqare < pipeSectionRight.sqare)
                 {
                     mainImageLeft.Source = littlePipe;
                     mainImageRight.Source = bigPipe;
-                }
-            }
+                }            
         }
 
        

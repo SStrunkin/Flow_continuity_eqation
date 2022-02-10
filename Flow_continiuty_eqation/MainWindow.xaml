@@ -46,7 +46,8 @@
 
         <Button x:Name="CalculateButton" Grid.Column="1" Grid.Row="0" VerticalAlignment="Top"
                 HorizontalAlignment="Right" Height="40" Width="130"
-                Margin="0,10,100,0" Content="Расчёт" FontSize="20"></Button>
+                Margin="0,10,100,0" Content="Расчёт" FontSize="20"
+                Click="CalculateButton_Click"></Button>
 
         <Button x:Name="ClearButton" Grid.Column="1" Grid.Row="0" VerticalAlignment="Top"
                 HorizontalAlignment="Right" Height="40" Width="60"

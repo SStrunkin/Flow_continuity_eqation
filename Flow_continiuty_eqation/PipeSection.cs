@@ -19,21 +19,21 @@ namespace Flow_continiuty_eqation
             Console.WriteLine("In calculate method");
         }
 
-        void calculateVolumeFlow()
+        public double calculateVolumeFlow()
         {
-            volumeFlow = flowSpeed * sqare;
-            Console.WriteLine("volumeFlow = " + volumeFlow);
+            return volumeFlow = flowSpeed * sqare;
+            
         }
 
-        void calculateSqare()
+        public double calculateSqare()
         {
-            sqare = Math.PI * Math.Pow(diameter, 2) / 4;
-            Console.WriteLine("Sqare = " + sqare);
+            return sqare = Math.PI * Math.Pow(diameter, 2) / 4;
+            
         }
 
-        void calculateDiameter()
+        public double calculateDiameter()
         {
-            diameter = Math.Sqrt((4 * sqare / Math.PI));
+            return diameter = Math.Sqrt((4 * sqare / Math.PI));
         }
     }
 }

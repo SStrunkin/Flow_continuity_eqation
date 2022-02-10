@@ -26,9 +26,9 @@ namespace Flow_continiuty_eqation
 
         BitmapImage littlePipe = new BitmapImage();
         BitmapImage bigPipe = new BitmapImage();
-        
-      
-        
+
+        List<TextBox> textBoxesList = new List<TextBox>();
+
 
         public MainWindow()
         {
@@ -45,10 +45,11 @@ namespace Flow_continiuty_eqation
             bigPipe.EndInit();
             mainImageRight.Stretch = Stretch.Fill;
 
+            mainImageLeft.Source = littlePipe;
+            mainImageRight.Source = littlePipe;
+
+
             
-
-
-            List<TextBox> textBoxesList = new List<TextBox>();
 
             textBoxesList.Add(volumeFlowTextBoxLeft);
             textBoxesList.Add(flowSpeedTextBoxLeft);
@@ -62,9 +63,11 @@ namespace Flow_continiuty_eqation
             foreach(var textBox in textBoxesList)
             {              
                 textBox.TextChanged += TextBox_TextChanged;
-            }            
+            }
+            
 
         }
+       
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -173,7 +176,12 @@ namespace Flow_continiuty_eqation
                 }            
         }
 
-       
-
+        private void ClearButton_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var textBox in textBoxesList)
+            {
+                textBox.Clear();
+            }
+        }
     }
 }

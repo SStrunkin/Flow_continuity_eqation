@@ -247,6 +247,63 @@ namespace Flow_continiuty_eqation
             {
                 sqareTextBoxRight.Text = pipeSectionRight.calculateSqare().ToString("N2");
             }
+
+            if ((volumeFlowTextBoxLeft.Text == "") &&
+                !(flowSpeedTextBoxLeft.Text == "") &&
+                !(sqareTextBoxLeft.Text == "") &&
+                (diametrTextBoxLeft.Text == "") &&
+                (volumeFlowTextBoxRight.Text == "")
+                
+                )
+            {
+                volumeFlowTextBoxLeft.Text = volumeFlowTextBoxRight.Text =
+                    pipeSectionLeft.calculateVolumeFlow().ToString("N2");
+
+                diametrTextBoxLeft.Text = pipeSectionLeft.calculateDiameter().ToString("N2");
+            }
+
+            if ((volumeFlowTextBoxLeft.Text == "") &&
+                !(flowSpeedTextBoxLeft.Text == "") &&
+                (sqareTextBoxLeft.Text == "") &&
+                !(diametrTextBoxLeft.Text == "") &&
+                (volumeFlowTextBoxRight.Text == "") 
+                )
+            {
+                sqareTextBoxLeft.Text = pipeSectionLeft.calculateSqare().ToString("N2");
+
+                volumeFlowTextBoxLeft.Text = volumeFlowTextBoxRight.Text =
+                    pipeSectionLeft.calculateVolumeFlow().ToString("N2");
+            }
+
+
+            if ((volumeFlowTextBoxLeft.Text == "") &&
+                
+                (diametrTextBoxLeft.Text == "") &&
+                (volumeFlowTextBoxRight.Text == "") &&
+                !(flowSpeedTextBoxRight.Text == "") &&
+                !(sqareTextBoxRight.Text == "") &&
+                (diametrTextBoxRight.Text == ""))
+            {
+                volumeFlowTextBoxLeft.Text = volumeFlowTextBoxRight.Text =
+                    pipeSectionRight.calculateVolumeFlow().ToString("N2");
+
+                diametrTextBoxRight.Text = pipeSectionRight.calculateDiameter().ToString("N2");
+            }
+
+            if ((volumeFlowTextBoxLeft.Text == "") &&
+                
+                (diametrTextBoxLeft.Text == "") &&
+                (volumeFlowTextBoxRight.Text == "") &&
+                !(flowSpeedTextBoxRight.Text == "") &&
+                (sqareTextBoxRight.Text == "") &&
+                !(diametrTextBoxRight.Text == ""))
+            {
+                sqareTextBoxRight.Text = pipeSectionRight.calculateSqare().ToString("N2");
+
+                volumeFlowTextBoxLeft.Text = volumeFlowTextBoxRight.Text =
+                    pipeSectionRight.calculateVolumeFlow().ToString("N2");
+            }
+
         }
     }
 }

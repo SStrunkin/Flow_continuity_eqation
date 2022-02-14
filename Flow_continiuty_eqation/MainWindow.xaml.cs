@@ -304,6 +304,87 @@ namespace Flow_continiuty_eqation
                     pipeSectionRight.calculateVolumeFlow().ToString("N2");
             }
 
+            if (!(volumeFlowTextBoxLeft.Text == "") &&
+                (flowSpeedTextBoxLeft.Text == "") &&
+                !(sqareTextBoxLeft.Text == "") &&
+                (diametrTextBoxLeft.Text == "") 
+                
+                
+                )
+            {
+                volumeFlowTextBoxRight.Text = volumeFlowTextBoxLeft.Text;
+
+                diametrTextBoxLeft.Text = pipeSectionLeft.calculateDiameter().ToString("N2");
+
+                flowSpeedTextBoxLeft.Text = pipeSectionLeft.calculatwFlowSpeed().ToString("N2");
+            }
+
+            if (
+                !(volumeFlowTextBoxRight.Text == "") &&
+                (flowSpeedTextBoxRight.Text == "") &&
+                !(sqareTextBoxRight.Text == "") &&
+                (diametrTextBoxRight.Text == ""))
+            {
+                volumeFlowTextBoxLeft.Text = volumeFlowTextBoxRight.Text;
+
+                diametrTextBoxRight.Text = pipeSectionRight.calculateDiameter().ToString("N2");
+
+                flowSpeedTextBoxRight.Text = pipeSectionRight.calculatwFlowSpeed().ToString("N2");
+
+            }
+
+            if (!(volumeFlowTextBoxLeft.Text == "") &&
+                !(flowSpeedTextBoxLeft.Text == "") &&
+                (sqareTextBoxLeft.Text == "") &&
+                (diametrTextBoxLeft.Text == "") 
+                )
+            {
+                volumeFlowTextBoxRight.Text = volumeFlowTextBoxLeft.Text;
+
+                sqareTextBoxLeft.Text = (PipeSection.volumeFlow / pipeSectionLeft.flowSpeed).ToString("N2");
+
+                diametrTextBoxLeft.Text = pipeSectionLeft.calculateDiameter().ToString("N2");
+            }
+
+            if (
+                !(volumeFlowTextBoxRight.Text == "") &&
+                !(flowSpeedTextBoxRight.Text == "") &&
+                (sqareTextBoxRight.Text == "") &&
+                (diametrTextBoxRight.Text == ""))
+            {
+                volumeFlowTextBoxLeft.Text = volumeFlowTextBoxRight.Text;
+
+                sqareTextBoxRight.Text = (PipeSection.volumeFlow / pipeSectionRight.flowSpeed).ToString("N2");
+
+                diametrTextBoxRight.Text = pipeSectionRight.calculateDiameter().ToString("N2");
+            }
+
+            if ((volumeFlowTextBoxLeft.Text == "") &&
+                !(flowSpeedTextBoxLeft.Text == "") &&
+                (sqareTextBoxLeft.Text == "") &&
+                !(diametrTextBoxLeft.Text == "") &&
+                (volumeFlowTextBoxRight.Text == "") &&
+                !(flowSpeedTextBoxRight.Text == "") &&
+                (sqareTextBoxRight.Text == "") &&
+                (diametrTextBoxRight.Text == ""))
+            {
+                diametrTextBoxRight.Text = Math.Sqrt(pipeSectionLeft.flowSpeed * Math.Pow(pipeSectionLeft.diameter, 2) 
+                    / pipeSectionRight.flowSpeed).ToString("N2");
+            }
+
+            if ((volumeFlowTextBoxLeft.Text == "") &&
+                !(flowSpeedTextBoxLeft.Text == "") &&
+                (sqareTextBoxLeft.Text == "") &&
+                (diametrTextBoxLeft.Text == "") &&
+                (volumeFlowTextBoxRight.Text == "") &&
+                !(flowSpeedTextBoxRight.Text == "") &&
+                (sqareTextBoxRight.Text == "") &&
+                !(diametrTextBoxRight.Text == ""))
+            {
+                diametrTextBoxLeft.Text = Math.Sqrt(pipeSectionRight.flowSpeed * Math.Pow(pipeSectionRight.diameter, 2)
+                    / pipeSectionLeft.flowSpeed).ToString("N2");
+            }
+
         }
     }
 }

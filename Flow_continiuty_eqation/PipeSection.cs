@@ -35,5 +35,10 @@ namespace Flow_continiuty_eqation
         {
             return diameter = Math.Sqrt((4 * sqare / Math.PI));
         }
+
+        public double calculatwFlowSpeed()
+        {
+            return flowSpeed = volumeFlow / sqare;
+        }
     }
 }

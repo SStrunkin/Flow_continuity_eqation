@@ -181,7 +181,7 @@
 
             <StackPanel Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Left">
                 <Label x:Name="volumeFlowLabelRight" Content="Объёмный расход (м^3/сек)"></Label>
-                <TextBox x:Name="volumeFlowTextBoxRight" MaxWidth="200"></TextBox>
+                <TextBox x:Name="volumeFlowTextBoxRight" MaxWidth="200" IsReadOnly="True"></TextBox>
                 <Label></Label>
                 <Label x:Name="flowSpeedLabelRight" Content="Скорость потока (м/сек)"></Label>
                 <TextBox x:Name="flowSpeedTextBoxRight" MaxWidth="200"></TextBox>

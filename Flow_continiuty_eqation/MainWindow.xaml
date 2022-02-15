@@ -95,7 +95,7 @@
                     Content="U2 (м/сек)" FontSize="20" Foreground="Gray">
             </Label>
             <Label Grid.Row="0" Grid.Column="2" HorizontalContentAlignment="Center"
-                    Content="S3 (м^2)" FontSize="20" Foreground="Gray">
+                    Content="S2 (м^2)" FontSize="20" Foreground="Gray">
             </Label>
             <Label Grid.Row="0" Grid.Column="3" HorizontalContentAlignment="Center"
                     Content="d2 (м)" FontSize="20" Foreground="Gray">

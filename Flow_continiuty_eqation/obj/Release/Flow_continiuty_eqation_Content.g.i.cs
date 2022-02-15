@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/little.bmp")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("programm_f3j_icon.ico")]
 
 

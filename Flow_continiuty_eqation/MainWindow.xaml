@@ -32,12 +32,96 @@
             <Image x:Name="mainImageRight"></Image>
         </Viewbox>
 
+       
+        <Grid Grid.Column="0" Grid.Row="0" HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Bottom">
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" HorizontalContentAlignment="Center"
+                    Content="V (м^3/сек)" FontSize="20" Foreground="Gray">
+            </Label>
+            <Label Grid.Row="0" Grid.Column="1" HorizontalContentAlignment="Center"
+                    Content="U1 (м/сек)" FontSize="20" Foreground="Gray">
+            </Label>
+            <Label Grid.Row="0" Grid.Column="2" HorizontalContentAlignment="Center"
+                    Content="S1 (м^2)" FontSize="20" Foreground="Gray">
+            </Label>
+            <Label Grid.Row="0" Grid.Column="3" HorizontalContentAlignment="Center"
+                    Content="d1 (м)" FontSize="20" Foreground="Gray">
+            </Label>
+            
+            
+            
+            <Label Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Center"
+                x:Name="volumeFlowShowLabelLeft" Content="0" FontSize="30" HorizontalAlignment="Stretch"></Label>
+            <Label Grid.Row="1" Grid.Column="1" HorizontalContentAlignment="Center"
+                x:Name="flowSpeedShowLabelLeft" Content="0" FontSize="30" HorizontalAlignment="Stretch"></Label>
+            <Label Grid.Row="1" Grid.Column="2" HorizontalContentAlignment="Center"
+                x:Name="sqareShowLabelLeft" Content="0" FontSize="30" HorizontalAlignment="Stretch"></Label>
+            <Label Grid.Row="1" Grid.Column="3" HorizontalContentAlignment="Center"
+                x:Name="diametrShowLabelLeft" Content="0" FontSize="30" HorizontalAlignment="Stretch"></Label>
+        </Grid>
+
+
+
+        <Grid Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Bottom">
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" HorizontalContentAlignment="Center"
+                    Content="V (м^3/сек)" FontSize="20" Foreground="Gray">
+            </Label>
+            <Label Grid.Row="0" Grid.Column="1" HorizontalContentAlignment="Center"
+                    Content="U2 (м/сек)" FontSize="20" Foreground="Gray">
+            </Label>
+            <Label Grid.Row="0" Grid.Column="2" HorizontalContentAlignment="Center"
+                    Content="S3 (м^2)" FontSize="20" Foreground="Gray">
+            </Label>
+            <Label Grid.Row="0" Grid.Column="3" HorizontalContentAlignment="Center"
+                    Content="d2 (м)" FontSize="20" Foreground="Gray">
+            </Label>
+
+
+
+            <Label Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Center"
+                x:Name="volumeFlowShowLabelRight" Content="0" FontSize="30" HorizontalAlignment="Stretch"></Label>
+            <Label Grid.Row="1" Grid.Column="1" HorizontalContentAlignment="Center"
+                x:Name="flowSpeedShowLabelRight" Content="0" FontSize="30" HorizontalAlignment="Stretch"></Label>
+            <Label Grid.Row="1" Grid.Column="2" HorizontalContentAlignment="Center"
+                x:Name="sqareShowLabelRight" Content="0" FontSize="30" HorizontalAlignment="Stretch"></Label>
+            <Label Grid.Row="1" Grid.Column="3" HorizontalContentAlignment="Center"
+                x:Name="diametrShowLabelRight" Content="0" FontSize="30" HorizontalAlignment="Stretch"></Label>
+        </Grid>
+
+
         <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"
                x:Name="LeftPipe" Content="Участок 1" FontWeight="Bold" 
-               FontSize="30" MaxHeight="50" VerticalAlignment="Top">
+               FontSize="30" MaxHeight="50" VerticalAlignment="Top"
+               BorderBrush="Black">
             
         </Label>
-
+       
+            
         <Label Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center"
                x:Name="RightPipe" Content="Участок 2" FontWeight="Bold" 
                FontSize="30" MaxHeight="50" VerticalAlignment="Top">
@@ -68,7 +152,7 @@
 
 
             <StackPanel Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Left">
-                <Label x:Name="volumeFlowLabelLeft" Content="Объёмный расход (м/сек^2)"></Label>
+                <Label x:Name="volumeFlowLabelLeft" Content="Объёмный расход (м^3/сек)"></Label>
                 <TextBox x:Name="volumeFlowTextBoxLeft" MaxWidth="200"></TextBox>
                 <Label></Label>
                 <Label x:Name="flowSpeedLabelLeft" Content="Скорость потока (м/сек)"></Label>
@@ -96,7 +180,7 @@
             </Grid.ColumnDefinitions>
 
             <StackPanel Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Left">
-                <Label x:Name="volumeFlowLabelRight" Content="Объёмный расход (м/сек^2)"></Label>
+                <Label x:Name="volumeFlowLabelRight" Content="Объёмный расход (м^3/сек)"></Label>
                 <TextBox x:Name="volumeFlowTextBoxRight" MaxWidth="200"></TextBox>
                 <Label></Label>
                 <Label x:Name="flowSpeedLabelRight" Content="Скорость потока (м/сек)"></Label>

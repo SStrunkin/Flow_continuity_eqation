@@ -234,7 +234,7 @@ namespace Flow_continiuty_eqation
                 (flowSpeedTextBoxRight.Text == "") 
                 )
             {
-                diametrTextBoxLeft.Text = pipeSectionLeft.calculateDiameter().ToString("N3");
+                diametrTextBoxLeft.Text = pipeSectionLeft.calculateDiameter().ToString("N4");
             }
 
             if ((volumeFlowTextBoxLeft.Text == "") &&
@@ -257,7 +257,7 @@ namespace Flow_continiuty_eqation
                 (flowSpeedTextBoxRight.Text == "")
                 )
             {
-                sqareTextBoxLeft.Text = pipeSectionLeft.calculateSqare().ToString("N3");
+                sqareTextBoxLeft.Text = pipeSectionLeft.calculateSqare().ToString("N4");
             }
 
             if ((volumeFlowTextBoxLeft.Text == "") &&
@@ -268,7 +268,7 @@ namespace Flow_continiuty_eqation
                 !(sqareTextBoxRight.Text == "") &&
                 (diametrTextBoxRight.Text == ""))
             {
-                diametrTextBoxRight.Text = pipeSectionRight.calculateDiameter().ToString("N3");
+                diametrTextBoxRight.Text = pipeSectionRight.calculateDiameter().ToString("N4");
             }
 
             if ((volumeFlowTextBoxLeft.Text == "") &&
@@ -279,7 +279,7 @@ namespace Flow_continiuty_eqation
                 (sqareTextBoxRight.Text == "") &&
                 !(diametrTextBoxRight.Text == ""))
             {
-                sqareTextBoxRight.Text = pipeSectionRight.calculateSqare().ToString("N3");
+                sqareTextBoxRight.Text = pipeSectionRight.calculateSqare().ToString("N4");
             }
 
             if (!(volumeFlowTextBoxLeft.Text == "") &&
@@ -292,9 +292,9 @@ namespace Flow_continiuty_eqation
                 (diametrTextBoxRight.Text == ""))
             {
                 volumeFlowTextBoxRight.Text = volumeFlowTextBoxLeft.Text;
-                sqareTextBoxLeft.Text = pipeSectionLeft.calculateSqare().ToString("N3");
+                sqareTextBoxLeft.Text = pipeSectionLeft.calculateSqare().ToString("N4");
 
-                flowSpeedTextBoxLeft.Text = pipeSectionLeft.calculatwFlowSpeed().ToString("N3");
+                flowSpeedTextBoxLeft.Text = pipeSectionLeft.calculatwFlowSpeed().ToString("N4");
             }
 
             if (!(volumeFlowTextBoxLeft.Text == "") &&
@@ -308,9 +308,9 @@ namespace Flow_continiuty_eqation
             {
                 volumeFlowTextBoxRight.Text = volumeFlowTextBoxLeft.Text;
 
-                sqareTextBoxRight.Text = pipeSectionRight.calculateSqare().ToString("N3");
+                sqareTextBoxRight.Text = pipeSectionRight.calculateSqare().ToString("N4");
 
-                flowSpeedTextBoxRight.Text = pipeSectionRight.calculatwFlowSpeed().ToString("N3");
+                flowSpeedTextBoxRight.Text = pipeSectionRight.calculatwFlowSpeed().ToString("N4");
             }
 
             if ((volumeFlowTextBoxLeft.Text == "") &&
@@ -322,9 +322,9 @@ namespace Flow_continiuty_eqation
                 )
             {
                 volumeFlowTextBoxRight.Text = volumeFlowTextBoxLeft.Text =
-                    pipeSectionLeft.calculateVolumeFlow().ToString("N3");
+                    pipeSectionLeft.calculateVolumeFlow().ToString("N4");
 
-                diametrTextBoxLeft.Text = pipeSectionLeft.calculateDiameter().ToString("N3");
+                diametrTextBoxLeft.Text = pipeSectionLeft.calculateDiameter().ToString("N4");
             }
 
             if ((volumeFlowTextBoxLeft.Text == "") &&
@@ -334,10 +334,10 @@ namespace Flow_continiuty_eqation
                  
                 )
             {
-                sqareTextBoxLeft.Text = pipeSectionLeft.calculateSqare().ToString("N3");
+                sqareTextBoxLeft.Text = pipeSectionLeft.calculateSqare().ToString("N4");
 
                 volumeFlowTextBoxRight.Text = volumeFlowTextBoxLeft.Text =
-                    pipeSectionLeft.calculateVolumeFlow().ToString("N3");
+                    pipeSectionLeft.calculateVolumeFlow().ToString("N4");
             }
 
 
@@ -350,9 +350,9 @@ namespace Flow_continiuty_eqation
                 (diametrTextBoxRight.Text == ""))
             {
                 volumeFlowTextBoxRight.Text = volumeFlowTextBoxLeft.Text =
-                    pipeSectionRight.calculateVolumeFlow().ToString("N3");
+                    pipeSectionRight.calculateVolumeFlow().ToString("N4");
 
-                diametrTextBoxRight.Text = pipeSectionRight.calculateDiameter().ToString("N3");
+                diametrTextBoxRight.Text = pipeSectionRight.calculateDiameter().ToString("N4");
             }
 
             if ((volumeFlowTextBoxLeft.Text == "") &&
@@ -363,10 +363,10 @@ namespace Flow_continiuty_eqation
                 (sqareTextBoxRight.Text == "") &&
                 !(diametrTextBoxRight.Text == ""))
             {
-                sqareTextBoxRight.Text = pipeSectionRight.calculateSqare().ToString("N3");
+                sqareTextBoxRight.Text = pipeSectionRight.calculateSqare().ToString("N4");
 
                 volumeFlowTextBoxRight.Text = volumeFlowTextBoxLeft.Text =
-                    pipeSectionRight.calculateVolumeFlow().ToString("N3");
+                    pipeSectionRight.calculateVolumeFlow().ToString("N4");
             }
 
             if (!(volumeFlowTextBoxLeft.Text == "") &&
@@ -379,9 +379,9 @@ namespace Flow_continiuty_eqation
             {
                 volumeFlowTextBoxRight.Text = volumeFlowTextBoxLeft.Text;
 
-                diametrTextBoxLeft.Text = pipeSectionLeft.calculateDiameter().ToString("N3");
+                diametrTextBoxLeft.Text = pipeSectionLeft.calculateDiameter().ToString("N4");
 
-                flowSpeedTextBoxLeft.Text = pipeSectionLeft.calculatwFlowSpeed().ToString("N3");
+                flowSpeedTextBoxLeft.Text = pipeSectionLeft.calculatwFlowSpeed().ToString("N4");
             }
 
             if (
@@ -392,9 +392,9 @@ namespace Flow_continiuty_eqation
             {
                 volumeFlowTextBoxRight.Text = volumeFlowTextBoxLeft.Text;
 
-                diametrTextBoxRight.Text = pipeSectionRight.calculateDiameter().ToString("N3");
+                diametrTextBoxRight.Text = pipeSectionRight.calculateDiameter().ToString("N4");
 
-                flowSpeedTextBoxRight.Text = pipeSectionRight.calculatwFlowSpeed().ToString("N3");
+                flowSpeedTextBoxRight.Text = pipeSectionRight.calculatwFlowSpeed().ToString("N4");
 
             }
 
@@ -406,9 +406,9 @@ namespace Flow_continiuty_eqation
             {
                 volumeFlowTextBoxRight.Text = volumeFlowTextBoxLeft.Text;
 
-                sqareTextBoxLeft.Text = (PipeSection.volumeFlow / pipeSectionLeft.flowSpeed).ToString("N3");
+                sqareTextBoxLeft.Text = (PipeSection.volumeFlow / pipeSectionLeft.flowSpeed).ToString("N4");
 
-                diametrTextBoxLeft.Text = pipeSectionLeft.calculateDiameter().ToString("N3");
+                diametrTextBoxLeft.Text = pipeSectionLeft.calculateDiameter().ToString("N4");
             }
 
             if (
@@ -417,11 +417,10 @@ namespace Flow_continiuty_eqation
                 (sqareTextBoxRight.Text == "") &&
                 (diametrTextBoxRight.Text == ""))
             {
-                volumeFlowTextBoxLeft.Text = volumeFlowTextBoxRight.Text;
+                
+                sqareTextBoxRight.Text = (PipeSection.volumeFlow / pipeSectionRight.flowSpeed).ToString("N4");
 
-                sqareTextBoxRight.Text = (PipeSection.volumeFlow / pipeSectionRight.flowSpeed).ToString("N3");
-
-                diametrTextBoxRight.Text = pipeSectionRight.calculateDiameter().ToString("N3");
+                diametrTextBoxRight.Text = pipeSectionRight.calculateDiameter().ToString("N4");
             }
 
             if ((volumeFlowTextBoxLeft.Text == "") &&
@@ -434,7 +433,7 @@ namespace Flow_continiuty_eqation
                 (diametrTextBoxRight.Text == ""))
             {
                 diametrTextBoxRight.Text = Math.Sqrt(pipeSectionLeft.flowSpeed * Math.Pow(pipeSectionLeft.diameter, 2) 
-                    / pipeSectionRight.flowSpeed).ToString("N3");
+                    / pipeSectionRight.flowSpeed).ToString("N4");
             }
 
             if ((volumeFlowTextBoxLeft.Text == "") &&
@@ -447,7 +446,7 @@ namespace Flow_continiuty_eqation
                 !(diametrTextBoxRight.Text == ""))
             {
                 diametrTextBoxLeft.Text = Math.Sqrt(pipeSectionRight.flowSpeed * Math.Pow(pipeSectionRight.diameter, 2)
-                    / pipeSectionLeft.flowSpeed).ToString("N3");
+                    / pipeSectionLeft.flowSpeed).ToString("N4");
             }
 
             if (
@@ -461,9 +460,9 @@ namespace Flow_continiuty_eqation
             {                
 
                 flowSpeedTextBoxRight.Text = (pipeSectionLeft.flowSpeed * Math.Pow(pipeSectionLeft.diameter, 2)
-                    / Math.Pow(pipeSectionRight.diameter, 2)).ToString("N3");
+                    / Math.Pow(pipeSectionRight.diameter, 2)).ToString("N4");
 
-                sqareTextBoxRight.Text = pipeSectionRight.calculateSqare().ToString("N3");
+                sqareTextBoxRight.Text = pipeSectionRight.calculateSqare().ToString("N4");
             }
 
             if ((volumeFlowTextBoxLeft.Text == "") &&
@@ -474,13 +473,13 @@ namespace Flow_continiuty_eqation
                 !(diametrTextBoxRight.Text == ""))
             {
                 flowSpeedTextBoxLeft.Text = (pipeSectionRight.flowSpeed * Math.Pow(pipeSectionRight.diameter, 2)
-                    / Math.Pow(pipeSectionLeft.diameter, 2)).ToString("N3");
+                    / Math.Pow(pipeSectionLeft.diameter, 2)).ToString("N4");
 
-                sqareTextBoxRight.Text = pipeSectionRight.calculateSqare().ToString("N3");
+                sqareTextBoxRight.Text = pipeSectionRight.calculateSqare().ToString("N4");
 
-                volumeFlowTextBoxLeft.Text = volumeFlowTextBoxRight.Text = pipeSectionRight.calculateVolumeFlow().ToString("N3");
+                volumeFlowTextBoxLeft.Text = volumeFlowTextBoxRight.Text = pipeSectionRight.calculateVolumeFlow().ToString("N4");
 
-                sqareTextBoxLeft.Text = pipeSectionLeft.calculateSqare().ToString("N3");
+                sqareTextBoxLeft.Text = pipeSectionLeft.calculateSqare().ToString("N4");
             }
 
             foreach (var textBox in textBoxesList)

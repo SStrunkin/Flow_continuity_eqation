@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Flow_continiuty_eqation"
         mc:Ignorable="d"
-        Title="Уравнение неприрывности потока 1.01" Height="768" Width="1366" WindowState="Maximized">
+        Title="Уравнение неприрывности потока 1.02" Height="768" Width="1366" WindowState="Maximized">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>

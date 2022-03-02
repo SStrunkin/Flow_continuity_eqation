@@ -466,7 +466,7 @@ namespace Flow_continiuty_eqation
                 sqareTextBoxRight.Text = pipeSectionRight.calculateSqare().ToString("N3");
             }
 
-            if (
+            if ((volumeFlowTextBoxLeft.Text == "") &&
                 !(diametrTextBoxLeft.Text == "") &&
                 
                 !(flowSpeedTextBoxRight.Text == "") &&

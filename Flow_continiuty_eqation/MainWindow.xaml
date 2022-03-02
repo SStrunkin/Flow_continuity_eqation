@@ -51,7 +51,7 @@
                     Content="V (м^3/сек)" FontSize="20" Foreground="Gray">
             </Label>
             <Label Grid.Row="0" Grid.Column="1" HorizontalContentAlignment="Center"
-                    Content="U1 (м/сек)" FontSize="20" Foreground="Gray">
+                    Content="W1 (м/сек)" FontSize="20" Foreground="Gray">
             </Label>
             <Label Grid.Row="0" Grid.Column="2" HorizontalContentAlignment="Center"
                     Content="S1 (м^2)" FontSize="20" Foreground="Gray">
@@ -92,7 +92,7 @@
                     Content="V (м^3/сек)" FontSize="20" Foreground="Gray">
             </Label>
             <Label Grid.Row="0" Grid.Column="1" HorizontalContentAlignment="Center"
-                    Content="U2 (м/сек)" FontSize="20" Foreground="Gray">
+                    Content="W2 (м/сек)" FontSize="20" Foreground="Gray">
             </Label>
             <Label Grid.Row="0" Grid.Column="2" HorizontalContentAlignment="Center"
                     Content="S2 (м^2)" FontSize="20" Foreground="Gray">
